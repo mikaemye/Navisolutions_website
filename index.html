@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Spectral:ital,wght@0,500;0,600;1,500&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="site.css?v=28" />
+<link rel="stylesheet" href="site.css?v=52" />
 <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
 </head>
 <body>
@@ -15,12 +15,13 @@
 <!-- ============================ NAV ============================ -->
 <header class="nav">
   <a class="brand" href="#top" aria-label="Navi Solutions home">
-    <img class="brand__logo" src="navi-logo-new.png" alt="Navi Solutions" />
+    <img class="brand__logo" src="navi-logo.svg" alt="Navi Solutions" />
   </a>
   <nav class="nav__menu">
     <a href="#mission">Mission</a>
     <a href="#values">Values</a>
     <a href="#services">Services</a>
+    <a href="#process">Process</a>
     <a href="#founders">Founders</a>
     <a href="#proof">Clients</a>
     <a class="btn btn--ghost nav__menu-cta js-book" href="https://calendly.com/mikaela-navisolutions/navi-solutions-discovery-call" target="_blank" rel="noopener"><span class="lbl">Book a discovery call</span> <span class="arr">→</span></a>
@@ -83,13 +84,13 @@
           <span class="mission__rule" aria-hidden="true"></span>
         </div>
         <figure class="mission__compass reveal">
-          <img src="compass-mission-2.png" alt="Brass mariner's compass rose" loading="lazy" style="opacity: 1">
+          <img src="compass-mission-2.png" alt="Brass mariner’s compass rose" loading="lazy" style="opacity: 1">
         </figure>
       </div>
       <div class="mission__body" style="gap: 26px">
       <p class="mission__lead reveal d1" style="font-size: 31px; text-align: left">Your trusted guide in the age of AI acceleration. We turn fear into possibility and uncertainty into clarity by delivering responsible AI solutions built on security, reliability, privacy and transparency.</p>
       <div class="mission__foot" style="gap: 2px">
-        <p class="mission__note reveal d2" style="font-size: 15px; line-height: 2.4; width: 500px">World-class guidance <span class="sep">|</span> Honestly priced</p>
+        <p class="mission__note reveal d2" style="font-size: 15px; line-height: 2.4;">World-class guidance <span class="sep">|</span> Honestly priced</p>
       </div>
     </div>
   </div>
@@ -145,12 +146,12 @@
 </section>
 
 <!-- ============================ SERVICES ============================ -->
-<section class="services" id="services">
+<section class="services" id="services" style="padding: 159px 0px 100px">
   <div class="wrap">
     <div class="services__head">
       <div>
         <span class="kicker reveal" style="font-size: 28px">Services</span>
-        <h2 class="h-sec reveal d1" style="color: #fff; margin-top: 18px; font-size: 56px">Here's what we build</h2>
+        <h2 class="h-sec reveal d1" style="color: #fff; margin-top: 18px; font-size: 56px; font-family: &quot;Spectral&quot;">Here’s what we build</h2>
       </div>
     </div>
     <div class="svc-rows reveal d1">
@@ -162,12 +163,23 @@
           <span class="svc-row__plus" aria-hidden="true"></span>
         </div>
         <div class="svc-row__panel"><ul class="svc-row__items">
-          <li>Business websites</li><li>Web apps</li><li>Landing pages</li>
+          <li>Business websites</li><li>Web apps</li><li>Landing pages</li><li>Wireframing &amp; prototyping</li>
         </ul></div>
       </article>
       <article class="svc-row" tabindex="0" aria-expanded="false">
         <div class="svc-row__head">
           <span class="svc-row__no">02</span>
+          <h3 class="svc-row__title" style="font-size: 40px">AI Operating Systems</h3>
+          <span class="svc-row__hint">the new baseline</span>
+          <span class="svc-row__plus" aria-hidden="true"></span>
+        </div>
+        <div class="svc-row__panel"><ul class="svc-row__items">
+          <li>Claude Code setup</li><li>Optimization audit of current systems</li>
+        </ul></div>
+      </article>
+      <article class="svc-row" tabindex="0" aria-expanded="false">
+        <div class="svc-row__head">
+          <span class="svc-row__no">03</span>
           <h3 class="svc-row__title" style="font-size: 40px">Infrastructure &amp; Backend</h3>
           <span class="svc-row__hint">foundations</span>
           <span class="svc-row__plus" aria-hidden="true"></span>
@@ -178,7 +190,7 @@
       </article>
       <article class="svc-row" tabindex="0" aria-expanded="false">
         <div class="svc-row__head">
-          <span class="svc-row__no">03</span>
+          <span class="svc-row__no">04</span>
           <h3 class="svc-row__title" style="font-size: 40px">Agentic Workflows</h3>
           <span class="svc-row__hint">the new frontier</span>
           <span class="svc-row__plus" aria-hidden="true"></span>
@@ -189,7 +201,7 @@
       </article>
       <article class="svc-row" tabindex="0" aria-expanded="false">
         <div class="svc-row__head">
-          <span class="svc-row__no">04</span>
+          <span class="svc-row__no">05</span>
           <h3 class="svc-row__title" style="font-size: 40px">Data &amp; Automation</h3>
           <span class="svc-row__hint">leverage</span>
           <span class="svc-row__plus" aria-hidden="true"></span>
@@ -202,16 +214,65 @@
   </div>
 </section>
 
+<!-- ============================ PROCESS ============================ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="process__head">
+      <span class="kicker reveal" style="font-size: 28px">How we work</span>
+      <h2 class="reveal d1">Our Process</h2>
+      <p class="reveal d2">A steady, low-risk path. We get to know your business first, then build only what moves it forward.</p>
+    </div>
+    <div class="pgrid">
+      <article class="pcard reveal d1">
+        <div class="pcard__top">
+          <span class="pcard__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg></span>
+          <span class="pcard__no">01</span>
+        </div>
+        <h3>Chart the course</h3>
+        <p class="pcard__sub">Understand first, build second.</p>
+        <ul class="pcard__list">
+          <li>We learn how your business really runs, and where the friction is.</li>
+          <li>We map your tools and data, then decide what’s actually worth automating.</li>
+        </ul>
+      </article>
+      <article class="pcard reveal d2">
+        <div class="pcard__top">
+          <span class="pcard__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="8 7 3 12 8 17"></polyline><polyline points="16 7 21 12 16 17"></polyline></svg></span>
+          <span class="pcard__no">02</span>
+        </div>
+        <h3>Build &amp; validate</h3>
+        <p class="pcard__sub">Custom solutions, proven before launch.</p>
+        <ul class="pcard__list">
+          <li>We build workflows tailored to you, and explain every choice in plain language.</li>
+          <li>We test on real data, so you trust the system before it goes live.</li>
+        </ul>
+      </article>
+      <article class="pcard reveal d3">
+        <div class="pcard__top">
+          <span class="pcard__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="3 17 9 11 13 15 21 6"></polyline><polyline points="15 6 21 6 21 12"></polyline></svg></span>
+          <span class="pcard__no">03</span>
+        </div>
+        <h3>Launch &amp; steer</h3>
+        <p class="pcard__sub">Guidance that doesn’t stop at go-live.</p>
+        <ul class="pcard__list">
+          <li>We ship into production with clear metrics and safeguards in place.</li>
+          <li>We monitor, gather feedback, and keep refining as your business grows.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ============================ CLIENTS ============================ -->
-<section class="clients" id="proof">
+<section class="clients" id="proof" style="padding: 6px 0px 68px">
   <div class="wrap">
     <div class="clients__head">
-      <span class="kicker on-cream reveal" style="justify-content:center; font-size: 30px">Partnerships built on trust</span>
+      <span class="kicker on-cream reveal" style="justify-content: center; font-size: 30px; font-weight: 600; padding: 66px">Partnerships built on trust</span>
     </div>
     <div class="clients__row reveal d1">
-      <a class="client" href="https://truewellness.org/" target="_blank" rel="noopener"><img class="client__logo" src="tw-mono.png" alt="True Wellness" loading="lazy"></a>
-      <a class="client" href="https://zerodownsoftware.com/" target="_blank" rel="noopener"><img class="client__logo" src="zerodown-mono.png" alt="Zero Down" loading="lazy" style="height:52px"></a>
-      <a class="client" href="https://aws.amazon.com/" target="_blank" rel="noopener"><img class="client__logo" src="aws-mono.png" alt="AWS" loading="lazy"></a>
+      <a class="client" href="https://truewellness.org/" target="_blank" rel="noopener"><img class="client__logo client__logo--full" src="tw-logo.webp" alt="True Wellness" loading="lazy"></a>
+      <a class="client" href="https://zerodownsoftware.com/" target="_blank" rel="noopener"><img class="client__logo client__logo--full" src="zerodown-logo.png" alt="Zero Down" loading="lazy" style="height:92px"></a>
+      <a class="client" href="https://aws.amazon.com/" target="_blank" rel="noopener"><img class="client__logo client__logo--full" src="aws-logo.svg" alt="AWS" loading="lazy" style="height:95px"></a>
     </div>
   </div>
 </section>
@@ -223,18 +284,18 @@
   <div class="wrap">
     <div class="founders__head">
       <span class="kicker on-cream reveal" style="font-size: 32px">The crew</span>
-      <h2 class="h-sec reveal d1" style="margin-top:18px">A family at the helm.</h2>
-      <p class="reveal d2">Sean and Mikaela's mission is to help small and medium-sized businesses navigate the future of AI, so they can compete with large enterprises on an even playing field, with the same level of expertise, without being left behind by the pace of change.</p>
+      <h2 class="h-sec reveal d1" style="margin-top:18px">A family at the helm</h2>
+      <p class="reveal d2" style="color: rgba(255, 255, 255, 0.85)">Sean and Mikaela’s mission is to help small and medium-sized businesses navigate the future of AI, so they can compete with large enterprises on an even playing field, with the same level of expertise, without being left behind by the pace of change.</p>
     </div>
     <div class="founders__grid">
       <article class="founder reveal">
         <div class="founder__photo founder__photo--filled"><img src="mikaela.jpg" alt="Mikaela Myers" loading="lazy" style="object-position:50% 18%"></div>
         <div class="founder__body">
           <h3>Mikaela Myers</h3>
-          <div class="role">Co-founder</div>
+          <div class="role" style="font-weight: 600; color: rgb(235, 180, 91)">Co-founder</div>
           <div class="founder__bio">
-            <p>Mikaela Myers is Co-Founder of Navi Solutions, where she designs and builds AI-powered systems, automation tools, and agentic workflows that help organizations adopt AI responsibly, effectively, and at scale.</p>
-            <p>Before founding Navi, she spent nearly eight years at Amazon and AWS, building deep expertise at the intersection of artificial intelligence, product strategy, and responsible innovation…</p>
+            <p style="color: rgba(255, 255, 255, 0.64)">Mikaela Myers is Co-Founder of Navi Solutions, where she designs and builds AI-powered systems, automation tools, and agentic workflows that help organizations adopt AI responsibly, effectively, and at scale.</p>
+            <p style="color: rgba(255, 255, 255, 0.64)">Before founding Navi, she spent nearly eight years at Amazon and AWS, building deep expertise at the intersection of artificial intelligence, product strategy, and responsible innovation…</p>
           </div>
           <div class="founder__links"><button class="ulink ulink--btn" type="button" data-bio-open="bio-mikaela" aria-haspopup="dialog">Read full bio <span class="arr">→</span></button><a class="ulink" href="https://www.linkedin.com/in/mikaela-myers-603930a4/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a></div>
         </div>
@@ -243,10 +304,11 @@
         <div class="founder__photo founder__photo--filled"><img src="sean.png" alt="Sean Myers" loading="lazy"></div>
         <div class="founder__body">
           <h3>Sean Myers</h3>
-          <div class="role">Co-founder</div>
+          <div class="role" style="font-weight: 600; color: rgb(228, 177, 92)">Co-founder</div>
           <div class="founder__bio">
             <p>Sean is defined by six words: consistency, forward thinking, fun, curiosity, execution, and navigation.</p>
-            <p>A lifelong entrepreneur and Navi's co-founder, he has spent decades navigating technology's biggest shifts, from client-server and the dot-com era to the ASP wave that foreshadowed SaaS, and now cloud and AI…</p>
+            <p>A lifelong entrepreneur and Navi’s co-founder, he has spent decades navigating technology’s biggest shifts, from client-server and the dot-com era to the ASP wave that foreshadowed SaaS, and now cloud and AI. As an early-stage founder and investor in infrastructure and deep technology, he has built and led large, high-performing multinational teams across borders and time zones.</p>
+            <p>That spirit of navigation runs deeper than technology. When his daughter Mikaela was ten, Sean moved the family aboard a sailboat and spent fifteen months sailing the world’s oceans, from the British Virgin Islands to Australia.</p>
           </div>
           <div class="founder__links"><button class="ulink ulink--btn" type="button" data-bio-open="bio-sean" aria-haspopup="dialog">Read full bio <span class="arr">→</span></button><a class="ulink" href="#">LinkedIn <span class="arr">→</span></a></div>
         </div>
@@ -260,15 +322,20 @@
   <div class="wrap">
     <div class="tst__head">
       <div>
-        <span class="kicker reveal">In their words</span>
-        <h2 class="h-sec reveal d1" style="margin-top:18px">Trusted to navigate.</h2>
+        <span class="kicker reveal" style="font-size: 32px">In their words</span>
+        <h2 class="h-sec reveal d1" style="margin-top:18px">Trusted to navigate</h2>
       </div>
     </div>
     <div class="tst__grid">
       <article class="tcard reveal">
         <div class="stars">★★★★★</div>
-        <blockquote>“Working with Navi Solutions has been a refreshing and energizing experience. Mikaela's project leadership is exceptional. She is prepared, focused and thoughtful in her approach, guiding meetings in a way that fosters strategic idea generation and development while maintaining professionalism and efficiency. The approach instills strong confidence and momentum for our team, and the product, thus far, is outstanding.”</blockquote>
+        <blockquote>“Working with Navi Solutions has been a refreshing and energizing experience. Mikaela’s project leadership is exceptional. She is prepared, focused and thoughtful in her approach, guiding meetings in a way that fosters strategic idea generation and development while maintaining professionalism and efficiency. The approach instills strong confidence and momentum for our team, and the product, thus far, is outstanding.”</blockquote>
         <div class="tcard__who"><div class="tcard__av"></div><div><div class="tcard__n">Jessie Podolak</div><div class="tcard__m">True Wellness</div></div></div>
+      </article>
+      <article class="tcard reveal d1">
+        <div class="stars">★★★★★</div>
+        <blockquote>“What has impressed me most is Mikaela’s command of the AI space. She doesn’t just talk about emerging technologies, she understands how to apply them in meaningful ways that create real business value. Throughout our ongoing work together, she consistently demonstrates her capabilities in real time, helping our team think differently and move forward with confidence.”</blockquote>
+        <div class="tcard__who"><div class="tcard__av"></div><div><div class="tcard__n">Joel Markquart</div><div class="tcard__m">Kern Collective</div></div></div>
       </article>
       <!-- PLACEHOLDER TESTIMONIALS — hidden until real quotes are ready. Uncomment to restore the 3-column layout.
       <article class="tcard reveal d1">
@@ -278,7 +345,7 @@
       </article>
       <article class="tcard reveal d2">
         <div class="stars">★★★★★</div>
-        <blockquote>Placeholder testimonial — a note on the founders' care, partnership, and measurable business outcomes.</blockquote>
+        <blockquote>Placeholder testimonial — a note on the founders’ care, partnership, and measurable business outcomes.</blockquote>
         <div class="tcard__who"><div class="tcard__av"></div><div><div class="tcard__n">Client Name</div><div class="tcard__m">Role · Company</div></div></div>
       </article>
       -->
@@ -288,13 +355,13 @@
 
 <!-- ============================ END / CONTACT ============================ -->
 <section class="end" id="contact">
-  <video class="end__video" src="water-bg.mp4?v=2" autoplay muted loop playsinline></video>
+  <video class="end__video" src="water-bg.mp4?v=3" autoplay muted loop playsinline></video>
   <div class="end__scrim" aria-hidden="true"></div>
   <div class="end__copy">
     <div class="end__copy-inner">
       <span class="kicker reveal" style="font-size: 32px">Set your course</span>
-      <h2 class="display reveal d1" style="font-size:clamp(48px,7.2vw,108px)">Let's talk</h2>
-      <p class="lead end__lead reveal d2">Whether you're exploring AI for the first time or scaling existing initiatives, we'll help you determine the right path forward.</p>
+      <h2 class="display reveal d1" style="font-size:clamp(48px,7.2vw,108px)">Let’s talk</h2>
+      <p class="lead end__lead reveal d2">Whether you’re exploring AI for the first time or scaling existing initiatives, we’ll help you determine the right path forward.</p>
       <div class="end__actions reveal d3">
         <a class="btn js-book" href="https://calendly.com/mikaela-navisolutions/navi-solutions-discovery-call" target="_blank" rel="noopener"><span class="lbl">Book a discovery call</span> <span class="arr">→</span></a>
         <button class="btn btn--ghost" type="button" id="contactToggle" aria-expanded="false" aria-controls="contactForm"><span class="lbl">Contact us</span></button>
@@ -327,13 +394,13 @@
     <div class="foot__top" style="padding: 0px 0px 10px">
       <div class="foot__brand">
         <a class="brand" href="#top">
-          <img class="brand__logo brand__logo--foot" src="navi-logo-new.png" alt="Navi Solutions" />
+          <img class="brand__logo brand__logo--foot" src="navi-logo.svg" alt="Navi Solutions" />
         </a>
         <p>Your trusted guide through the age of AI acceleration. Consulting &amp; build, done responsibly.</p>
       </div>
       <div class="foot__col">
         <h4>Find us</h4>
-        <address class="foot__addr" style="font-family: &quot;Archivo&quot;; font-size: 6px">
+        <address class="foot__addr">
           360 Central Ave, Suite 800<br>
           PMB 17259435<br>
           St. Petersburg, FL 33701
@@ -385,8 +452,8 @@
       <h3 class="bio__name" id="bio-sean-name">Sean Myers</h3>
       <div class="bio__copy">
         <p>Sean Myers is defined by six words: consistency, forward thinking, fun, curiosity, execution, and navigation.</p>
-        <p>A lifelong entrepreneur and a co-founder of Navi Solutions, Sean has spent many decades navigating technology's most pivotal shifts. From the client-server revolution of the 1980s and '90s, through the dot-com era, the rise of ASP (Application Service Provider) platforms that foreshadowed modern SaaS, and into today's cloud and AI-driven world. As an early-stage founder and investor in infrastructure and deep technology, he has built and led large, high-performing multinational teams, turning bold ideas into operating businesses across borders and time zones. Sean has always had a knack for seeing around the corner. He began investing in the ASP space before the internet bubble even popped, recognizing the future of software delivery long before the market caught up.</p>
-        <p>That spirit of navigation runs deeper than technology. When his daughter Mikaela was ten years old, Sean moved the family aboard a sailboat and spent fifteen months sailing the world's oceans, from the British Virgin Islands to Australia. That adventure captures something essential about who Sean is: that the best journeys, in business and in life, require equal parts preparation, courage, and a genuine love for the ride.</p>
+        <p>A lifelong entrepreneur and a co-founder of Navi Solutions, Sean has spent many decades navigating technology’s most pivotal shifts. From the client-server revolution of the 1980s and ‘90s, through the dot-com era, the rise of ASP (Application Service Provider) platforms that foreshadowed modern SaaS, and into today’s cloud and AI-driven world. As an early-stage founder and investor in infrastructure and deep technology, he has built and led large, high-performing multinational teams, turning bold ideas into operating businesses across borders and time zones. Sean has always had a knack for seeing around the corner. He began investing in the ASP space before the internet bubble even popped, recognizing the future of software delivery long before the market caught up.</p>
+        <p>That spirit of navigation runs deeper than technology. When his daughter Mikaela was ten years old, Sean moved the family aboard a sailboat and spent fifteen months sailing the world’s oceans, from the British Virgin Islands to Australia. That adventure captures something essential about who Sean is: that the best journeys, in business and in life, require equal parts preparation, courage, and a genuine love for the ride.</p>
       </div>
     </div>
   </div>
