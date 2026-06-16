@@ -78,8 +78,6 @@ a { color: inherit; }
 }
 .kicker::before { content:""; width: 30px; height: 1px; background: currentColor; opacity: 0.7; }
 .hero__copy .kicker::before { display: none; }
-.clients__head .kicker::before { display: none; }
-.clients__head .kicker { font-weight: 700; }
 .kicker.on-cream { color: var(--brass-deep); }
 
 .coord { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; opacity: 0.62; }
@@ -244,9 +242,9 @@ section { position: relative; }
   display: grid; grid-template-columns: 1fr; gap: 20px; justify-items: start;
   max-width: 70ch; margin: 0 0 clamp(48px,6.5vh,80px); text-align: left;
 }
-.values__head .kicker { justify-content: flex-start; color: #c79a5b; }
+.values__head .kicker { justify-content: flex-start; color: var(--brass); }
 .values__head h2 { color: #fff; max-width: 20ch; line-height: 1.08; text-wrap: balance; }
-.values__head h2 em { font-style: italic; color: #c79a5b; }
+.values__head h2 em { font-style: italic; color: var(--brass); }
 .values__head p { color: var(--on-dark-soft); max-width: 54ch; }
 
 .vgrid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
@@ -335,7 +333,7 @@ section { position: relative; }
 }
 .process .wrap { position: relative; z-index: 1; }
 .process__head { text-align: center; max-width: 780px; margin: 0 auto clamp(52px,7vh,86px); display: grid; gap: 18px; justify-items: center; }
-.process__head .kicker { justify-content: center; color: var(--brass-2); }
+.process__head .kicker { justify-content: center; color: var(--brass); }
 .process__head .kicker::before { display: none; }
 .process__head h2 { color: #fff; font-size: clamp(40px,5vw,64px); line-height: 1.03; }
 .process__head p { color: var(--on-dark-soft); font-size: clamp(17px,1.5vw,20px); line-height: 1.6; max-width: 56ch; text-wrap: pretty; }
@@ -378,13 +376,13 @@ section { position: relative; }
    ========================================================================= */
 .partners { background: var(--abyss); color: var(--on-dark); padding: clamp(72px,11vh,140px) 0; position: relative; z-index: 2; }
 .partners__head { text-align: center; max-width: 1040px; margin: 0 auto clamp(50px,7vh,80px); }
-.partners__title { color: #fff; }
+.partners__title { color: var(--brass); }
 .partners__row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: clamp(44px,8vw,108px); }
 .partner { display: inline-flex; align-items: center; justify-content: center; padding: 6px 4px; text-decoration: none; }
 .partner__logo { width: auto; object-fit: contain; display: block;
-  filter: brightness(0) invert(1); opacity: 0.85;
-  transition: filter .4s ease, opacity .4s ease, transform .4s cubic-bezier(.2,.8,.2,1); }
-.partner:hover .partner__logo { filter: none; opacity: 1; transform: scale(1.05); }
+  filter: brightness(0) invert(1); opacity: 0.9;
+  transition: opacity .4s ease, transform .4s cubic-bezier(.2,.8,.2,1); }
+.partner:hover .partner__logo { opacity: 1; transform: scale(1.05); }
 .partner__logo--tw  { height: 40px; }
 .partner__logo--zd  { height: 56px; }
 .partner__logo--aws { height: 62px; }
@@ -397,7 +395,7 @@ section { position: relative; }
    ========================================================================= */
 .founders { background: linear-gradient(180deg, var(--abyss) 0%, var(--abyss) 30%, var(--abyss-2) 100%); color: var(--on-dark); padding: clamp(40px,5vh,72px) 0 clamp(100px,14vh,180px); position: relative; z-index: 2; }
 .founders__head { max-width: none; margin-bottom: 56px; }
-.founders__head .kicker { display: flex; width: 100%; color: var(--brass-2); }
+.founders__head .kicker { display: flex; width: 100%; color: var(--brass); }
 .founders__head .kicker::after { content:""; flex: 1 1 auto; height: 1px; align-self: center; background: linear-gradient(90deg, currentColor, color-mix(in srgb, currentColor 8%, transparent)); opacity: 0.75; }
 .founders__head h2 { white-space: nowrap; color: #fff; }
 .founders__head p { color: var(--on-dark-soft); margin-top: 18px; max-width: 92ch; text-wrap: pretty; }
@@ -646,7 +644,7 @@ body.bio-open { overflow: hidden; }
   .hero h1 { width: auto !important; }
   .hero h1 em { white-space: normal !important; }
   .hero__copy { max-width: 100%; }
-  .hero__media video { transform: scale(1.5); transform-origin: top center; }
+  .hero__media video { transform: scale(1.6) translateY(80px); transform-origin: top center; }
   .hero__media::after {
     background:
       linear-gradient(180deg, color-mix(in srgb,var(--abyss-2) 80%, transparent) 0%, color-mix(in srgb,var(--abyss-2) 30%, transparent) 26%, transparent 42%),
